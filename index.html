@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input 
+                  id="name" 
+                  type="text" 
+                  name="name" 
+                  style="width: 600px;"
+                />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input 
+                  id="email"
+                  type="email"
+                  pattern=".+@globex\.com"
+                  size="30"
+                  style="width: 600px;"
+                  required
+                />
+            </div>
+            <div>
+                <label for="form-message">Your message:</label>
+                <textarea
+                  id="form-message"
+                  name="message"
+                  autofocus="on"
+                  style="width: 600px; height: 300px;"
+                  maxlength="200"
+                  required
+                  ></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
